@@ -141,12 +141,12 @@ namespace OpenTabletDriver.UX
             catch (TimeoutException)
             {
                 _app.ShowDialog<FatalErrorDialog>(this, "Unable to connect to the OpenTabletDriver Daemon.");
-                _app.Exit(1);
+                //_app.Exit(1);
             }
             catch (Exception ex)
             {
                 ex.Show();
-                _app.Exit(2);
+                //_app.Exit(2);
             }
         }
 
